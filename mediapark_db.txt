@@ -1,0 +1,37 @@
+DROP TABLE IF EXISTS `wp_mediapark`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `wp_mediapark` (
+                                             `id` int NOT NULL AUTO_INCREMENT,
+                                             `discount` int(2) COLLATE utf8mb4_unicode_520_ci,
+                                             `house_nr` int(10) COLLATE utf8mb4_unicode_520_ci DEFAULT 0,
+                                             `house_area` decimal(5,2) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+                                             `room_count` int(32) COLLATE utf8mb4_unicode_520_ci DEFAULT 1,
+                                             `window_side` varchar(32) COLLATE utf8mb4_unicode_520_ci,
+                                             `status` text COLLATE utf8mb4_unicode_520_ci NOT NULL,
+                                             PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+INSERT INTO `wp_mediapark` VALUES (1,5,1,50.17,2,'Rytai','Statoma'),
+                                  (2,null,1,35.00,1,'Rytai','Statoma'),
+                                  (3,15,2,50.17,2,'Rytai','Pastatyta'),
+                                  (4,10,2,60.00,3,'Pietūs','Pastatyta'),
+                                  (5,5,1,50.17,2,'Rytai','Statoma'),
+                                  (6,20,1,50.17,2,'Pietūs','Pastatyta'),
+                                  (7,null,1,50.17,2,'Rytai','Statoma'),
+                                  (8,null,1,50.17,2,'Rytai','Statoma'),
+                                  (9,5,1,50.17,2,'Pietūs','Pastatyta'),
+                                  (10,null,1,35.00,1,'Rytai','Pastatyta'),
+                                  (11,5,2,60.00,3,'Pietūs','Pastatyta'),
+                                  (12,5,1,35.00,1,'Rytai','Statoma'),
+                                  (13,10,2,60.00,3,'Rytai','Statoma'),
+                                  (14,5,1,50.17,2,'Rytai','Pastatyta'),
+                                  (15,null,1,50.17,2,'Pietūs','Statoma'),
+                                  (16,25,1,60.00,3,'Pietūs','Statoma'),
+                                  (17,55,3,35.00,1,'Pietūs','Pastatyta'),
+                                  (18,35,3,50.17,2,'Pietūs','Statoma'),
+                                  (19,null,1,60.00,3,'Pietūs','Pastatyta'),
+                                  (20,5,1,35.00,1,'Rytai','Statoma');
+
+
