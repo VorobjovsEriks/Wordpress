@@ -129,6 +129,7 @@ body {
     }
 
     #child-primary-menu-list {
+      @include font-montserat-medium;
       padding-bottom: 0;
 
       @media (min-width: $desktop-break-point) {

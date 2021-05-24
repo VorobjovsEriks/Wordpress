@@ -92,6 +92,8 @@ body.home {
         left: 60%;
         padding-bottom: 0; } }
     #masthead .primary-menu-container #child-primary-menu-list {
+      font-family: Montserat, sans-serif;
+      font-weight: 500;
       padding-bottom: 0; }
       @media (min-width: 1100px) {
         #masthead .primary-menu-container #child-primary-menu-list {
