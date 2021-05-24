@@ -11,9 +11,9 @@ Used VCCW for wordpress development : http://vccw.cc/
 2. theme to use "twentytwentyone-child"
    (created a child not new theme, as i thought this would be faster)
 3. Needed plugin : "Genesis Custom Blocks"
-3.1. in "Custom blocks" create "form", "News", "slider", "Table",
+4. in "Custom blocks" create "form", "News", "slider", "Table",
     no additional fields are needed there, as I couldn't export these custom blocks,
     i hardcoded all customisable data.
-4. add all "Custom blocks" in main page.
+5. add all "Custom blocks" in main page.
 
 You can run gulp watch from '/wp-content/themes/twentytwentyone-child'
