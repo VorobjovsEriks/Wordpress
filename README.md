@@ -7,6 +7,11 @@ Used VCCW for wordpress development : http://vccw.cc/
 1. Run `vagrant up`.
 
 ## Site configuration
+
+Should work if you simply copy theme files.
+
+OR
+
 1. url should be http://mediapark.development
 2. theme to use "twentytwentyone-child"
    (created a child not new theme, as i thought this would be faster)

@@ -46,8 +46,6 @@ add_filter('get_filters', function()
 add_action('display_table', function ()
 {
 	$args = [
-		'maxRowsDesktop' => block_field('max-rows-desktop', false),
-		'maxRowsMobile' => block_field('max-rows-mobile', false),
 		'filters' => apply_filters('get_filters', '')
 	];
 

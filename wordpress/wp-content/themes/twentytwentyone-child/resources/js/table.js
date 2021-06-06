@@ -10,7 +10,6 @@
 	});
 
 	function getTableData() {
-		console.log('trymebiasdf')
 		let areaF = $('#areaFilter').val();
 		let roomF = $('#roomCountFilter').val();
 		let windowF = $('#windowSideFilter').val();

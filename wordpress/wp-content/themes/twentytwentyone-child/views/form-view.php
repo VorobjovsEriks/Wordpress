@@ -66,7 +66,7 @@
 
 			<button id="sendForm" class="disabled">
 				Siųsti
-				<img
+				<img class="send-form--button__arrow"
 					src="/wp-content/themes/twentytwentyone-child/resources/images/arrow-pointing-to-right-white.png">
 			</button>
 		</form>

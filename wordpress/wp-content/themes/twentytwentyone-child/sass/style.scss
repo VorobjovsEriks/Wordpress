@@ -42,6 +42,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0;
   }
 
   .site-title {
@@ -59,11 +60,20 @@ body {
   #child-primary-mobile-menu {
     background-color: $white;
     color: $black;
-    padding: 0;
+    padding: 0 20px 0 0;
+    outline: none;
+    border: none;
 
     .dropdown-icon {
       &.close {
         display: none;
+      }
+
+      &.open {
+        .svg-icon {
+          position: relative;
+          top: 4px;
+        }
       }
     }
 
@@ -71,6 +81,11 @@ body {
       .dropdown-icon {
         &.close {
           display: block;
+
+          .svg-icon {
+            position: relative;
+            top: 5px;
+          }
         }
 
         &.open {
@@ -124,8 +139,8 @@ body {
       width: auto;
       display: flex;
       align-items: center;
-      left: 60%;
       padding-bottom: 0;
+      justify-content: flex-end;
     }
 
     #child-primary-menu-list {
@@ -163,6 +178,7 @@ body {
 
 #main {
   padding-top: 0;
+  background-color: $white;
 }
 
 .entry-content {
@@ -212,6 +228,8 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  padding-bottom: 10px;
+  overflow: hidden;
   margin-bottom: 100px;
 
   .site-main & {
@@ -316,8 +334,12 @@ body {
     }
 
     &--info {
-      //height: 260px;
+      height: 125px;
       margin: 25px 30px 10px 45px;
+
+      @media (min-width: $slider-break-point) {
+        height: 160px;
+      }
 
       &__title {
         @include font-montserat-semiBold;
@@ -372,8 +394,16 @@ body {
   outline: none;
   width: 30px;
 
+  img {
+    width: 30px;
+  }
+
   @media (min-width: $tablet-break-point) {
     width: 60px;
+
+    img {
+      width: 60px;
+    }
   }
 
   &:hover {
@@ -605,14 +635,15 @@ body {
         }
 
         &__text {
+          @include font-quicksand-bold;
           position: absolute;
           bottom: 25px;
           left: 20px;
-          @include font-quicksand-bold;
           color: $white;
           font-size: 26px;
           line-height: 32px;
           z-index: 1;
+          word-break: break-word;
         }
       }
     }
@@ -643,6 +674,7 @@ body {
         width: 35px;
         height: 24px;
         margin-left: 25px;
+        display: inline;
       }
     }
   }
@@ -872,6 +904,7 @@ body {
       width: 35px;
       height: 24px;
       margin-left: 25px;
+      display: inline;
     }
 
     &.disabled {

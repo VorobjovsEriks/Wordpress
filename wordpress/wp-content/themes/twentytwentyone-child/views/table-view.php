@@ -1,5 +1,5 @@
 <div class="table--mediapark alignwide">
-	<span class="anchor" id="tableMediapark"></span>
+	<span class="anchor" id="table"></span>
 	<div class="table--mediapark__filters">
 		<?php foreach ($args['filters'] as $key => $filter) {
 			?>

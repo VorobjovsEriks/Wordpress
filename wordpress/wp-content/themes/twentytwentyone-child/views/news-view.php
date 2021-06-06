@@ -18,7 +18,7 @@
 		</div>
 		<button class="news--button__all-news">
 			Daugiau naujienų
-			<img
+			<img class="news--button__arrow"
 				src="/wp-content/themes/twentytwentyone-child/resources/images/arrow-pointing-to-right-white.png">
 		</button>
 	</div>
