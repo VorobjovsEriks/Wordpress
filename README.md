@@ -7,7 +7,8 @@ Should work if you simply copy theme files.
 DB will be created and populated on theme switch : functions.php table_create()
 
 Custom blocks will load by default if "Homepage settings > homepage and posts page"
-will not be selected i.e. "--Select--"
+will not be selected i.e.
+ "--Select--"
 
 OR
 
